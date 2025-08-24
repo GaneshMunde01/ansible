@@ -1,0 +1,13 @@
+- name: Variable playbook 
+  hosts: all
+  vars:
+    URL: cloudblitz.in
+  vars_files:
+    - ./file.txt
+  tasks: 
+    - debug:
+        msg: Hello {{URL}}
+      vars:
+        URL: local.cloudblitz.in
+    - debug:
+        msg: My Url is {{URL}}  

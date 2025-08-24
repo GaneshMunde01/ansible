@@ -1,0 +1,11 @@
+- name: Loop yaml
+  hosts: all
+  tasks:
+    - name: print-msg1
+      debug:
+        msg: I love {{item}}
+      loop:
+        - Banana
+        - Pineapple
+        - Apple
+        - Kiwi

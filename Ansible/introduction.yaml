@@ -1,0 +1,42 @@
+
+
+Playbook = yaml and yaml is all about indentation
+    - indedation
+python = indedation 
+
+fruits{
+apple 
+orange
+greps
+kiwi
+pineapple
+}
+
+fruits:
+  - apple
+  - orange
+  - greps
+  - pineapple
+
+
+variable: 
+    mayur --> 10 times 
+    10 times --> Replace 
+
+    variable: mayur 
+
+
+variable:
+    cli variable
+    local variable
+    file variable
+    Global variable
+
+
+  if (x==1){
+      perform taks
+  }
+  else{
+      perform other task 
+  }
+    

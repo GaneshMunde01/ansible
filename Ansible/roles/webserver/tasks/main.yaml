@@ -1,0 +1,24 @@
+- name: Download template
+  become: true
+  get_url:
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip
+    dest: /opt
+
+- name: Unzip template
+  become: true
+  unarchive:
+    src: /opt/healet.zip
+    dest: /var/www/html/
+    remote_src: yes
+
+# - name: install package
+#   become: true 
+#   apt:
+#     name: apache2
+#     state: present
+  
+# - name: Copy html Content
+#   become: true
+#   copy:
+#     src: index.html
+#     dest: /var/www/html/index.html
